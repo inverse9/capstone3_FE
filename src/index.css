@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply mx-[250px];
+  @apply lg:mx-[80px] xl:mx-[250px];
 }
