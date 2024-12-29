@@ -12,7 +12,7 @@ const Panduan = () => {
           <div className="bg-slate-300 w-32 h-20">logo</div>
           <nav className="flex gap-20 font-semibold px-8">
             <div onClick={() => navigate("/panduan")}>
-              <button className="rounded-xl bg-yellow-400 px-4 py-2 ">
+              <button className="rounded-xl  bg-[#FFD400] px-4 py-2 ">
                 Kembali
               </button>
             </div>
@@ -54,7 +54,7 @@ const Panduan = () => {
           <div className="bg-slate-300 w-32 h-20">logo</div>
           <nav className="flex gap-20 font-semibold px-8">
             <div onClick={() => navigate("/")}>
-              <button className="rounded-xl bg-yellow-400 px-4 py-2 ">
+              <button className="rounded-xl  bg-[#FFD400] px-4 py-2 ">
                 Kembali
               </button>
             </div>
@@ -74,7 +74,7 @@ const Panduan = () => {
               <span>Denpasar, Bali</span>
               <button
                 onClick={() => navigate(`/panduan/${i + 1}`)}
-                className="rounded-md bg-yellow-400 px-2 py-0.5 font-semibold mt-2"
+                className="rounded-md  bg-[#FFD400] px-2 py-0.5 font-semibold mt-2"
               >
                 Selengkapnya
               </button>{" "}
