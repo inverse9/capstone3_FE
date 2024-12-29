@@ -20,6 +20,7 @@ function App() {
           </div>
         </nav>
       </header>
+      <h1 className="font-bold text-xl my-8 text-center">Home</h1>
     </div>
   );
 }

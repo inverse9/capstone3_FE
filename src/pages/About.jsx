@@ -62,11 +62,13 @@ const About = () => {
           <div className="grid grid-cols-3 gap-4 ">
             {[...Array(3)].map((_, i) => (
               <div
-                onClick={() => navigate(`/panduan/${i}`)}
                 key={i}
-                className="flex flex-col items-center justify-center"
+                className="flex flex-col items-center justify-center "
               >
-                <div className="size-56 bg-slate-200"></div>
+                <div
+                  onClick={() => navigate(`/panduan/${i}`)}
+                  className="size-56 bg-slate-200 cursor-pointer"
+                ></div>
                 <span className="font-bold capitalize">pura agung besakih</span>
                 <span>Denpasar, Bali</span>
               </div>

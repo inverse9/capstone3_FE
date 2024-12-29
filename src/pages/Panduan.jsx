@@ -7,7 +7,7 @@ const Panduan = () => {
 
   if (id)
     return (
-      <div>
+      <div className="">
         <header className="flex justify-between p-4">
           <div className="bg-slate-300 w-32 h-20">logo</div>
           <nav className="flex gap-20 font-semibold px-8">
@@ -26,7 +26,7 @@ const Panduan = () => {
             backgroundImage:
               "url(https://www.rentalmobilbali.net/wp-content/uploads/2012/02/Pura-Ulun-Danu-Danau-Bedugul.jpg)",
           }}
-          className="h-[300px] bg-center bg-cover bg-no-repeat"
+          className="h-[600px] bg-center bg-cover bg-no-repeat"
         ></div>
         <section>
           <div className="text-center my-8 font-bold text-xl">Pura {id}</div>
@@ -65,12 +65,11 @@ const Panduan = () => {
         </h1>
         <div className="grid grid-cols-3 grid-rows-3 gap-4 ">
           {[...Array(9)].map((_, i) => (
-            <div
-              onClick={() => navigate(`/panduan/${i}`)}
-              key={i}
-              className="flex flex-col items-center justify-center cursor-pointer"
-            >
-              <div className="size-56 bg-slate-200"></div>
+            <div key={i} className="flex flex-col items-center justify-center">
+              <div
+                onClick={() => navigate(`/panduan/${i}`)}
+                className="size-56 bg-slate-200 cursor-pointer"
+              ></div>
               <span className="font-bold capitalize">pura agung besakih</span>
               <span>Denpasar, Bali</span>
               <button
